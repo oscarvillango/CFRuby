@@ -4,7 +4,7 @@
 	Sentencia if
 
 	- No es necesario agregar llaves al contenido de la condicion
-	- 
+	- Si se quiere se puede poner parentesis en la condicion del if, pero no se necesita
 
 =end
 
