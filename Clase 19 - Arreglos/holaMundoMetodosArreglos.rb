@@ -4,6 +4,8 @@
 	Arreglos - Recorridos y operaciones
 
 	- El metodo map sirve para recorrer y de ser necesario modificar
+	- El metodo select filtra un arreglo por medio de una validacion
+	- Para eliminar se utiliza el metodo delete_if y trabaja similarmente al metodo select
 
 =end
 
@@ -33,6 +35,20 @@ class HolaMundo
 		end
 
 		puts "------------- Filtrar arreglos ---------------"
+
+		arrayfiltered = arreglo.select{|num| num % 2 == 0 }
+
+		for i in arrayfiltered
+			puts i
+		end
+
+		puts "------------- Eliminar items arreglos ---------------"
+
+		arrayDeleted = arreglo.delete_if{|num| num % 2 == 0 }
+
+		for i in arrayDeleted
+			puts i
+		end
 
 	end
 end
